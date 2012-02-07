@@ -18,7 +18,7 @@
   .item {
     display: none;
     position: relative;
-    .transition(.6s ease-in-out left);
+    .transition(@carouselTransition);
   }
 
   // Account for jankitude on images
@@ -75,10 +75,10 @@
   font-size: 60px;
   font-weight: 100;
   line-height: 30px;
-  color: @white;
+  color: @carouselControlColor;
   text-align: center;
-  background: @grayDarker;
-  border: 3px solid @white;
+  background: @carouselControlBgColor;
+  border: @carouselControlBorder;
   .border-radius(23px);
   .opacity(50);
 
@@ -97,7 +97,7 @@
 
   // Hover state
   &:hover {
-    color: @white;
+    color: @carouselControlHoverColor;
     text-decoration: none;
     .opacity(90);
   }
@@ -112,10 +112,10 @@
   right: 0;
   bottom: 0;
   padding: 10px 15px 5px;
-  background: @grayDark;
+  background: @carouselCaptionBgColor;
   background: rgba(0,0,0,.75);
 }
 .carousel-caption h4,
 .carousel-caption p {
-  color: @white;
+  color: @carouselCaptionColor;
 }
