@@ -38,8 +38,17 @@
 
 // Buttons
 @primaryButtonBackground:    @linkColor;
+@btnTextColor: @grayDark;
+@btnHoverTextColor: @grayDark;
 
-
+// Code
+@codeColor: #d14;
+@preColor: @grayDark;
+@codeBgColor: #f7f7f9;
+@preBgColor: #f5f5f5;
+@codeBorder: 1px solid #e1e1e8;
+@preBorder: 1px solid rgba(0,0,0,.15);
+@preBorderFallback: 1px solid #ccc; // fallback for IE7-8
 
 // COMPONENT VARIABLES
 // --------------------------------------------------
@@ -58,8 +67,24 @@
 @iconSpritePath:          "../img/glyphicons-halflings.png";
 @iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
 
+// Animations
+@fade: opacity .15s linear;
+@collapse: height .35s ease;
+
 // Input placeholder text color
 @placeholderText:         @grayLight;
+
+// Dropdowns
+@dropdownMenuOpenColor: @white;
+@dropdownMenuBg: rgba(0,0,0,.3);
+@dropdownMenuBgFallback: #ccc;
+@dropdownBgColor: @white;
+@dropdownBorderFallback: #ccc;
+@dropdownBorder: rgba(0,0,0,.2);
+@dropdownDividerColor: #e5e5e5;
+@dropdownLinkColor: @gray;
+@dropdownLinkHoverColor: @white;
+@dropdownHoverBg: @linkColor;
 
 // Navbar
 @navbarHeight:                    40px;
@@ -87,7 +112,22 @@
 @infoBackground:          #d9edf7;
 @infoBorder:              darken(spin(@infoBackground, -10), 7%);
 
+// Accordian
+@accordianBorderColor:    #e5e5e5;
 
+// Breadcrumbs
+@bcDividerColor: @grayLight;
+@bcActiveColor: @grayDark;
+@bcBorderColor: #ddd;
+
+// Carousel
+@carouselControlColor: @white;
+@carouselControlBgColor: @grayDarker;
+@carouselControlBorder: 3px solid @white;
+@carouselControlHoverColor: @white;
+@carouselCaptionBgColor: @grayDark;
+@carouselCaptionColor: @white;
+@carouselTransition: .6s ease-in-out left;
 
 // GRID
 // --------------------------------------------------
